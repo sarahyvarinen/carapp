@@ -1,9 +1,9 @@
-import { Button, Dialog, DialogActions, DialogTitle } from "@mui/material"; // Tuodaan myös DialogTitle
+import { Button, Dialog, DialogActions, DialogTitle } from "@mui/material"; 
 import { useState } from "react";
 
 export default function EditCar() {
     // states
-    const [open, setOpen] = useState(false); // Dialogin avaaminen/sulkeminen
+    const [open, setOpen] = useState(false); 
     const [car, setCar] = useState({
         brand: '', model: '', color: '', fuel: '', modelYear: '', price: ''
     });
@@ -12,8 +12,7 @@ export default function EditCar() {
 
     // functions
     const handleSave = () => {
-        // Tallenna muokkaukset
-        // Lisää tallennustoiminnallisuus täällä
+        
         setOpen(false); // Sulje dialogi tallennuksen jälkeen
     };
 

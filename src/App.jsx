@@ -14,8 +14,8 @@ function App() {
   return (
     <>
       <h1>Car Shop</h1>
-      <AddCar addCar={addCar} /> {/* Lisää AddCar-komponentti */}
-      <CarList cars={cars} /> {/* Välitä autot CarList-komponentille */}
+      <AddCar addCar={addCar} /> 
+      <CarList cars={cars} /> 
     </>
   );
 }

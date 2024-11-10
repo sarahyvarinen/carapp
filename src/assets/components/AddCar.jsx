@@ -16,7 +16,7 @@ export default function AddCar({ getCars }) {
         })
         .then(response => {
             if (response.ok) {
-                getCars(); // Päivitä autolista
+                getCars(); //päivitä
                 setOpen(false); // Sulje dialogi
                 setCar({ brand: '', model: '', color: '', fuel: '', modelYear: '', price: '' }); // Tyhjennä kentät
             }

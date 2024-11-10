@@ -70,7 +70,7 @@ export default function CarList() {
     // Näytä autot nettisivulla
     return (
         <>
-            {/* Välitetään getCars AddCar-komponentille */}
+            
             <AddCar getCars={getCars} />
             <div className="ag-theme-material" style={{ width: 900, height: 400 }}>
                 <AgGridReact
