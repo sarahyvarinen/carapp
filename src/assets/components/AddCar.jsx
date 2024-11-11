@@ -7,6 +7,8 @@ export default function AddCar({ getCars }) {
         brand: '', model: '', color: '', fuel: '', modelYear: '', price: ''
     });
 
+  
+
     // Funktio auton lisäämiseksi
     const handleSave = () => {
         fetch('https://car-rest-service-carshop.2.rahtiapp.fi/cars', {
@@ -16,7 +18,7 @@ export default function AddCar({ getCars }) {
         })
         .then(response => {
             if (response.ok) {
-                getCars(); //päivitä
+                getCars(); // Päivitä autolista
                 setOpen(false); // Sulje dialogi
                 setCar({ brand: '', model: '', color: '', fuel: '', modelYear: '', price: '' }); // Tyhjennä kentät
             }
