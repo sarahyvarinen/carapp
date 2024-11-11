@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/https://github.com/sarahyvarinen/carapp.git/', 
+  base: '/carapp.git/', 
   plugins: [react()],
   test: {
     globals: true,
